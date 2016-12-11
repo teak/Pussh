@@ -1,0 +1,34 @@
+body {
+    font-family: "OpenSans", sans-serif;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.nav-tabs {
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.tab-pane {
+    background: #fff;
+    padding: 10px 20px;
+    border-top: none;
+}
+
+.nav-tabs>li>a {
+    border: none;
+    border-radius: 0px;
+
+    cursor: default;
+}
+
+.nav-tabs>li>a:hover {
+    border: none;
+    background: inherit;
+
+    cursor: default;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    border: none;
+}

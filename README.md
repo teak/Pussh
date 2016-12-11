@@ -1,10 +1,30 @@
 Pussh
 =====
 
-The cross platform, multi-functional screenshot utility that doesn't suck. http://pussh.me
+The cross platform, multi-functional screenshot utility. http://pussh.me/
 
-Build Instructions
-	
-1. Install node
-2. Run ```bash package.sh``` from the root of the repo
-3. Pussh application is output in ./output/
+Deps:
+
+* node@6.4.0
+* npm@3.10.6
+
+Local Dev Windows Only:
+
+```
+npm install --global --production windows-build-tools
+```
+
+Local Dev:
+
+```
+npm install
+npm start
+```
+
+Dist:
+
+```
+npm run dist
+```
+
+That was easy.

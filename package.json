@@ -1,22 +1,21 @@
 {
   "name": "Pussh",
-  "main": "./resources/index.html",
-  "version": "0.0.1",
-  "window": {
-    "frame": true,
-    "width": 400,
-    "height": 300,
-    "focus": true,
-    "show_in_taskbar": false,
-    "show": false
+  "version": "0.0.2",
+  "scripts": {
+    "preinstall": "cd app && npm install",
+    "start": "electron ./app",
+    "pack": "build --dir",
+    "dist": "build"
   },
-  "node-remote": "<local>",
-  "dependencies": {
-    "keytar": "^2.1.0",
-    "nw-gyp": "^0.12.4",
-    "png-crop": "^0.0.0",
-    "request": "^2.45.0",
-    "slash": "^1.0.0",
-    "ssh2": "^0.3.6"
+  "devDependencies": {
+    "electron-builder": "^5.30.0",
+    "electron-prebuilt": "^1.3.3"
+  },
+  "build": {
+    "appId": "com.nightdev.pussh",
+    "category": "public.app-category.productivity",
+    "win": {
+      "iconUrl": "https://github.com/teak/Pussh/tree/electron-dev/build/icon.ico?raw=true"
+    }
   }
 }
